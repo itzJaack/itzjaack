@@ -1,0 +1,129 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111111; /* Fully black background */
+}
+
+header, footer {
+    display: none; /* Remove header and footer */
+}
+
+.nav-bar {
+    background-color: #000;
+    padding: 0.25rem 1rem;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    display: flex; /* Change to flex to ensure everything is in the same line */
+    justify-content: center;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.nav-bar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar nav ul li {
+    margin: 0 1rem;
+}
+
+.nav-bar nav ul li a {
+    color: #ccc;
+    text-decoration: underline;
+    padding: 0.25rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.nav-bar nav ul li a:hover {
+    color: #fff;
+}
+
+.links-bar {
+    background-color: #000;
+    padding: 0.25rem 1rem;
+    margin-top: 1rem; /* Adjust position as needed */
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden; /* Hide overflowing content */
+    width: 100%; /* Ensure full width */
+}
+
+.links-bar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    animation: slide 20s linear infinite; /* Make the slide slower */
+}
+
+.links-bar nav ul li {
+    margin: 0 1rem;
+}
+
+.links-bar nav ul li a {
+    color: #ccc;
+    text-decoration: underline;
+    padding: 0.25rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.links-bar nav ul li a:hover {
+    color: #fff;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+main {
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/*fix sliding not working and make that nav slider is double the size of div.nav-bar and make it centered too*/
